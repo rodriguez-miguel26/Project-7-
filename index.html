@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=" en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webapp Dashboard</title>
+    </head>
+
+    <body>
+        <header> <!--header  (consists of 4 elements- title, bell icon, profile picture, profile name)-->
+           <h1>WebApp</h1>
+                <div> <!--div (to contain the bell icon)-->
+                        <!--svg (import svg file for bell icon)-->
+                    <div id="notifications"></div> <!--div#notifications (container element for our notifications)-->
+                </div>
+            <img src="images/member-1.jpg" class="profile-picture" alt="">
+            <h3 class="student-name"></h3>       
+        </header>
+        
+        <nav class="nav"> 
+            <a class="" href="home" src="svgs/home.svg"></a>
+            <a class="" href="graphs" src="svgs/bar-chart.svg"></a>
+            <a class="" href="members" src="svgs/members.svg"></a>
+            <a class="" href="settings" src="svgs/settings.svg"></a>
+        </nav>
+
+        <main><!-- --main (widget container) -->
+            <div class="main-header"> <!--row-->
+                <h2 class="headline">Dashboard</h2>
+                <div class="tab"></div>
+            </div>  
+            
+            <div class="alert" id="alert">
+                <!--JS will insert alert here-->
+            </div>
+
+            <section class="traffic">
+                <div class="traffic-header">
+                    <h3>Traffic</h3>
+                    <ul class="traffic-nav">
+                        <li class="traffic-nav-link">Hourly</li>
+                        <li class="traffic-nav-link">Daily</li>
+                        <li class="traffic-nav-link active">Weekly</li>
+                        <li class="traffic-nav-link">Monthly</li>
+                    </ul> 
+                </div>
+
+                <!--line graph chart-->
+                <div class="widget-container-full">
+                    <!--element line graph will attach to-->
+                    <canvas id="traffic-chart"></canvas>
+                </div>
+            </section>
+            
+            <!--bar graph-->
+            <section class="daily">
+                <h3>Daily Traffic</h3>
+
+                <div class="widget-container-half">
+                    <!--element bar graph will attach to-->
+                    <canvas id="daily-chart"></canvas>
+                </div>
+            </section>
+
+            <!--social status-->
+            <div class="social-container">
+                <div class="social-image">
+                    <!--inline svg not included for brevity-->
+                </div>   
+                <div class="social-text">
+                    <p>Twitter</p>
+                    <p>10,345</p>
+                </div>
+            </div>
+            <!--add two more social containers and child elements for other social media items-->
+
+        </main>    
+    </body>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html> 
