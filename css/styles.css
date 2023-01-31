@@ -18,7 +18,10 @@
             "nav"
             "main";
 }
-
+.header {
+    display:flex;
+    
+}
 .header{
     grid-area: header;
 }
