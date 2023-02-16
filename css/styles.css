@@ -20,7 +20,7 @@
 }
 .header {
     display:flex;
-    
+    flex-direction: row;
 }
 .header{
     grid-area: header;
@@ -92,6 +92,6 @@
         SVG
 ===================================*/
 .bell-icon {
-    width: 5%;
+    width: 20%;
     display: block;
 }
