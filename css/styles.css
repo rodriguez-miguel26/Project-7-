@@ -57,6 +57,7 @@
     white-space: nowrap;
 }
 
+
 /*===================================
         NAVIGATION
 ===================================*/
@@ -84,6 +85,8 @@
     list-style-type: none;
     
 }
+
+
 
 /*===================================
         MAIN
@@ -160,9 +163,12 @@
         SVG
 ===================================*/
 .bell-icon {
-    width: 30%;
-    display: flex;
-    margin: auto;
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    flex-direction: row;
+
 }
 
 .home-svg {
