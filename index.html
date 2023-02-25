@@ -33,6 +33,7 @@
                     </li>
 
                     <li>
+
                         <svg class="bar-chart-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452.979 452.979">
                             <path d="M437.979 433.724l-419.29.565.566-418.723c.011-8.284-.495-15-8.78-15C2.193.566 0 6.716 0 15v422.979c0 8.284 6.716 15 15 15h422.979c8.284 0 14.434-2.192 14.434-10.476s-6.15-8.79-14.434-8.78z"/><path d="M56.998 405.981h78.927c5.523 0 10-4.477 10-10v-82.833c0-5.523-4.477-10-10-10H56.998c-5.523 0-10 4.477-10 10v82.833c0 5.523 4.477 10 10 10zm10-82.833h58.927v62.833H66.998v-62.833zM179.147 405.981h78.927c5.522 0 10-4.477 10-10v-215.6c0-5.523-4.478-10-10-10h-78.927c-5.523 0-10 4.477-10 10v215.6c0 5.523 4.477 10 10 10zm10-215.599h58.927v195.6h-58.927v-195.6zM305.054 405.981h78.928c5.522 0 10-4.477 10-10V49.161c0-5.523-4.478-10-10-10h-78.928c-5.522 0-10 4.477-10 10v346.82c0 5.523 4.478 10 10 10zm10-346.82h58.928v326.82h-58.928V59.161z"/>
                           </svg>
@@ -56,7 +57,7 @@
 
         <main class="main"><!-- --main (widget container) -->
             <div class="main-header"> <!--row-->
-                <h3 class="headline">Dashboard</h3>
+                <h2 class="headline">Dashboard</h2>
                 <div class="tab"></div>
             </div>  
             
@@ -70,7 +71,7 @@
                     <ul class="traffic-nav">
                         <li class="traffic-nav-link">Hourly</li>
                         <li class="traffic-nav-link">Daily</li>
-                        <li class="traffic-nav-link">Weekly</li>
+                        <li class="traffic-nav-link active">Weekly</li>
                         <li class="traffic-nav-link">Monthly</li>
                     </ul> 
                 </div>
@@ -90,6 +91,14 @@
                     <!--element bar graph will attach to-->
                     <canvas id="daily-chart"></canvas>
                 </div>
+            </section>
+
+            <section class="mobile">
+                <h3>MOBILE USERS</h3>
+                    <div class="mobile-users">
+                        <canvas id="mobile-chart"></canvas>
+                    </div>
+
             </section>
 
             <!--social status-->
@@ -217,8 +226,15 @@
 
             <!--local settings widget-->
             <section class="settings">
-                <h3>SETTINGS</h3>
                 <!--custom CSS toggle code-->
+                <div class="toggle-box">
+                    <h4 id="noti-settings">Settings</h4>
+                    <div class="toggle">
+                        <input type="checkbox">
+                        <label for="" class="onbtn">On</label>
+                        <label for="" class="offbtn">Off</label>
+                    </div>
+                </div>
 
                 <select class="form-field" id="timezone">
                     <option disabled selected>Select timezone</option>
