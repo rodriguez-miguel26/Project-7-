@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
         <title>Webapp Dashboard</title>
     </head>
 
@@ -228,12 +229,19 @@
             <section class="settings">
                 <!--custom CSS toggle code-->
                 <div class="toggle-box">
-                    <h4 id="noti-settings">Settings</h4>
+                    <h3 id="noti-settings">Settings</h3>
                     <div class="toggle">
-                        <input type="checkbox">
+                        <p class="email-noti">Send Email Notifications</p><input type="checkbox">
                         <label for="" class="onbtn">On</label>
                         <label for="" class="offbtn">Off</label>
                     </div>
+
+                    <div class="toggle">
+                        <p class="profile-noti">Set Profile to Public</p><input type="checkbox">
+                        <label for="" class="onbtn">On</label>
+                        <label for="" class="offbtn">Off</label>
+                    </div>
+
                 </div>
 
                 <select class="form-field" id="timezone">
@@ -245,9 +253,9 @@
                     <option>Mountain</option>
                 </select>
 
-                <div class="settings button">
-                    <button class="button-primary" id="save">Save</button>
-                    <button class="button-disabled" id="cancel">Cancel</button>
+                <div class="settings-button">
+                    <button id="save">Save</button>
+                    <button id="cancel">Cancel</button>
                 </div>
             </section>
         </main>    

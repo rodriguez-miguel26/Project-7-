@@ -93,7 +93,9 @@
 ===================================*/
 .main {
     display: flex;
-    padding: 5px 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px;
 
 }
 
@@ -195,12 +197,63 @@
     margin: auto;
 }
 
+/*===================================
+        MESSAGE USER 
+===================================*/
 
+.widget-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field, 
+.form-area,
+.button-primary {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.form-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.form-area{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150px;
+    text-align: left;
+}
+
+.button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
 /*===================================
         Settings 
 ===================================*/
+.settings {
+    display:flex;
+    flex-direction: column;
+}
 
+h3 {
+    display: flex;
+    margin: 10px 0px; 
+}
 
+.toggle-box .toggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
 
 /*toggle switch*/
 
@@ -244,6 +297,10 @@ input:checked[type="checkbox"]::before{
 }
 
 label{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
     position: absolute; 
     color: #151515; 
     font-weight: 20; 
@@ -251,16 +308,34 @@ label{
     pointer-events: none;
 }
 
-.onbtn{
-    bottom: 8px;
-    left: 6px;
+/*time zone*/
+
+select {
+    display: flex;
+    
+    margin-bottom: 20px;
+    height: 50px;
+    
+    border-radius: 5px;
+    border-width: 2px;
 }
-.offbtn{
-    bottom: 8px;
-    right: 6px; 
-    color: #34495e;
+
+.settings-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+#save{
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    border-radius: 5px;
+}
 
-
-
+#cancel{
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    border-radius: 5px;
+}
