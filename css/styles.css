@@ -237,7 +237,6 @@
 .members {
     display: flex;
     flex-direction: column;
-    margin: 10px auto;
 }
 .members-activity, 
 .members-container {
@@ -262,6 +261,7 @@
 h3 {
     display: flex;
     margin-left: 3px;
+    margin: 15px 0;
 }
 
 /*===================================
@@ -311,14 +311,8 @@ h3 {
 }
 
 
-.toggle-box .toggle{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px 0px;
-}
-
 /*toggle switch*/
+
 
 input[type="checkbox"] {
     position: relative;
@@ -354,21 +348,27 @@ input[type="checkbox"]::before{
 input:checked[type="checkbox"]::before{
     left:60px;
 }
-.toggle {
-    position: relative;
-    display: inline;
+
+.toggle-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.toggle-text{
+    position: absolute;
+    display: inline-flex;
 }
 
 label{
-    display: flex;
+    position: absolute;
     justify-content: center;
-    align-content: space-around;
-    align-items: center;
-    position:absolute; 
     color: #151515; 
     font-weight: 20; 
     font-size: 10px; 
     pointer-events: none;
+
 }
 
 /*time zone*/
@@ -380,6 +380,7 @@ select {
     border-radius: 5px;
     border-width: 2px;
 }
+
 
 .settings-button {
     display: flex;

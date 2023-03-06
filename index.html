@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
         <title>Webapp Dashboard</title>
     </head>
 
@@ -230,16 +229,15 @@
 
             <!--local settings widget-->
             <section class="settings">
-                <!--custom CSS toggle code-->
+                <h3>Settings</h3><!--custom CSS toggle code-->
                 <div class="toggle-box">
-                    <h3 id="noti-settings">Settings</h3>
                     <div class="toggle">
                         <p class="email-noti">Send Email Notifications</p><input type="checkbox">
                         <label for="" class="onbtn">On</label>
                         <label for="" class="offbtn">Off</label>
                     </div>
 
-                    <div class="toggle">
+                    <div class="toggle-text">
                         <p class="profile-noti">Set Profile to Public</p><input type="checkbox">
                         <label for="" class="onbtn">On</label>
                         <label for="" class="offbtn">Off</label>
@@ -248,7 +246,7 @@
                 </div>
 
                 <select class="form-field" id="timezone">
-                    <option disabled selected>Select timezone</option>
+                    <option class="select-text" disabled selected>Select timezone</option>
                     <option>Eastern</option>
                     <option>Pacific</option>
                     <option>Atlantic</option>
