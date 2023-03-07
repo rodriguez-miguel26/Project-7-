@@ -286,6 +286,7 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 50px;
+    padding: 10px;
 }
 
 .form-area{
@@ -294,6 +295,7 @@ h3 {
     align-items: center;
     height: 150px;
     text-align: left;
+    padding:10px;
 }
 
 .button-primary {
@@ -308,68 +310,49 @@ h3 {
 .settings {
     display:flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 
 /*toggle switch*/
-
-
-input[type="checkbox"] {
-    position: relative;
-    width: 80px;
-    height: 20px;
-    background: #bdc3c7;
-    -webkit-appearance: none;
-    border-radius: 30px;
-    outline: none;
-    transition: .4s;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-input:checked[type="checkbox"] {
-    background: #3498db;
-}
-
-input[type="checkbox"]::before{
-    z-index: 2;
-    position: absolute;
-    content: "";
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 50%;
-    transform: scale(1.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: .4s;
-}
-
-input:checked[type="checkbox"]::before{
-    left:60px;
-}
-
-.toggle-box{
+.toggle-text {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    margin: 15px 0px;
+    align-items: center;
+    margin: 10px 0;
 }
 
-.toggle-text{
+.toggle-checkbox {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100px; 
+    height: 30px;
+    border-radius: 25px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background 1s;
+    outline: none;
+    padding-left: 20px;
+} 
+
+.toggle-checkbox::after {
+    content: '';
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #fff;
     position: absolute;
-    display: inline-flex;
+    top: 50%;
+    left: 15%;
+    transition: left .3s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+} .toggle-checkbox:checked {
+    background-color: #4463ff;
+} .toggle-checkbox:checked::after {
+    left: 85%;
 }
 
-label{
-    position: absolute;
-    justify-content: center;
-    color: #151515; 
-    font-weight: 20; 
-    font-size: 10px; 
-    pointer-events: none;
 
-}
 
 /*time zone*/
 
@@ -391,15 +374,13 @@ select {
 #save,
 #cancel{
     width: 80%;
-    margin: auto;
+    margin: 10px auto;
     height: 50px;
     border-radius: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 button{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}    

@@ -230,20 +230,15 @@
             <!--local settings widget-->
             <section class="settings">
                 <h3>Settings</h3><!--custom CSS toggle code-->
-                <div class="toggle-box">
-                    <div class="toggle">
-                        <p class="email-noti">Send Email Notifications</p><input type="checkbox">
-                        <label for="" class="onbtn">On</label>
-                        <label for="" class="offbtn">Off</label>
+                    <div class="toggle-text">
+                        <label for="email">Send Email Notifications</label>
+                        <input class="toggle-checkbox" id="email" type="checkbox">
                     </div>
 
                     <div class="toggle-text">
-                        <p class="profile-noti">Set Profile to Public</p><input type="checkbox">
-                        <label for="" class="onbtn">On</label>
-                        <label for="" class="offbtn">Off</label>
+                        <label for="public-noti">Set Profile to Public</label>
+                        <input class="toggle-checkbox" id="public" type="checkbox">
                     </div>
-
-                </div>
 
                 <select class="form-field" id="timezone">
                     <option class="select-text" disabled selected>Select timezone</option>
