@@ -50,6 +50,7 @@ body {
     height:80px;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items:center;
     margin: 0 auto;
     font-size: .7rem;
@@ -104,32 +105,31 @@ body {
         MAIN
 ===================================*/
 .main {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    justify-content: flex-start;
     margin: 15px;
 
 }
 
 .main-header {
     display: grid;
-    margin-top: 10px; 
-    margin-bottom: 100px; 
+    margin-top: 0px; 
+    margin-bottom: 60px; 
+}
+
+.headline {
+   display: grid;
+   grid-column: 1;
 }
 
 .tab {
-    grid-column: 2 / 5;
-    background-color: #dae3ea;
-    width: 100%;
+    display: grid;
+    grid-column: 2;
+    background-color: #b3b3b3;
     height: 50px;
-    margin-top: -25px;
-    margin-left: 15px;
-    border-style: solid;
-    border-top-style: none;
-    border-right-style: none;
-    border-color: #b3b3b3;
-    border-width: 2px;
+    
 }
+
 
 .traffic {
     border-bottom-style: solid;
