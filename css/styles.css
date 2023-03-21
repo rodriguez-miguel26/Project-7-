@@ -267,9 +267,9 @@ h3 {
         Settings 
 ===================================*/
 .settings {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+
 }
 
 
@@ -374,6 +374,19 @@ button{
     }
 }
 
+@media (min-width: 768px) {
+    .header-container {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:768px){
+    .main-header {
+        display: grid;
+        grid-column: 1 / span 2;
+    }
+}
+
 @media (min-width:768px) {
     .traffic, .social-status {
         grid-column: 1 / span 2;
@@ -397,11 +410,19 @@ button{
     }
 }
 
-@media (min-width: 768px) {
-    .mobile, .activity, .settings .widget-container{
-        grid-column: 2 / span 1;
+@media (min-width:768px) {
+    .message, .settings {
+        display: grid;
+        grid-column: 1;
+    }
+
+    .widget-container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
     }
 }
+
 
 .widget-container-full, .widget-container-half {
     width: 100%;
@@ -430,5 +451,22 @@ button{
 }
 
 @media (min-width:768px){
+    .nav {
+        height: 100%;
+    }
+    
+    .nav-bar {
+        margin-top: -1669px;
+    }
+
+    .nav-links {
+        display: grid; 
+        grid-template-columns: 80px;
+        justify-content: center;
+    }
+
+    .nav-svg{
+        margin: 10px auto;
+    }
 
 }
