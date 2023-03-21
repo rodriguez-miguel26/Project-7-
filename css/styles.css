@@ -352,7 +352,7 @@ button{
 
 
 /*===================================
-        MEDIA QUERIES
+        MEDIA QUERIES 768px
 ===================================*/
 
 @media (min-width:768px) {
@@ -381,6 +381,24 @@ button{
 }
 
 @media (min-width:768px){
+    .nav {
+        height: 100%;
+    }
+    
+
+    .nav-links {
+        display: grid; 
+        grid-template-columns: 80px;
+        justify-content: center;
+    }
+
+    .nav-svg{
+        margin: 10px auto;
+    }
+
+}
+
+@media (min-width:768px){
     .main-header {
         display: grid;
         grid-column: 1 / span 2;
@@ -405,22 +423,22 @@ button{
 }
 
 @media (min-width: 768px) {
-    .daily, .members, .message .activity {
+    .daily {
         grid-column: 1 / span 1;
     }
 }
 
+
 @media (min-width:768px) {
-    .message, .settings {
+    .message,  .activity, .settings {
         display: grid;
-        grid-column: 1;
+        grid-column: 1 / span 2;
     }
 
-    .widget-container{
-        display: flex;
-        flex-direction: column;
-        width: auto;
+    .toggle-checkbox{
+        margin-right: 440px;
     }
+
 }
 
 
@@ -448,25 +466,34 @@ button{
         height: 200px;
         margin: 5px;
     }
+
+
 }
 
-@media (min-width:768px){
-    .nav {
-        height: 100%;
+@media (min-width: 768px) {
+    .date {
+        margin-left: auto;
     }
-    
-    .nav-bar {
-        margin-top: -1669px;
-    }
+}
 
-    .nav-links {
-        display: grid; 
-        grid-template-columns: 80px;
-        justify-content: center;
-    }
 
-    .nav-svg{
-        margin: 10px auto;
-    }
 
+/*===================================
+        MEDIA QUERIES 1024px
+===================================*/
+
+
+@media (min-width: 1024px) {
+    .members, .activity, .message,  .settings {
+        display: grid;
+    }
+    .members, .message {
+        grid-column: 1 / span 1;
+    }
+    .activity, .settings {
+        grid-column: 2 / span 1;
+    }
+    .toggle-checkbox {
+        margin-right: 0;
+    }
 }
