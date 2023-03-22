@@ -62,6 +62,14 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
+
+.blank {
+    border: 1px solid rgb(228, 228, 228);
+    height: 40px;
+    position: relative;
+    margin-left: 10px;
+}
+
 .profile-picture{
     width: 30%;
     height: 30%;
@@ -133,12 +141,6 @@ body {
 .bell-icon {
     width: 30px;
     height: 30px;
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-bottom: 0;
-    border-top: 0;
-    border-left: 0;
 }
 
 .nav-svg {
@@ -232,13 +234,11 @@ h3 {
     flex-direction: column;
 }
 
-.form-field, 
 .form-area,
 .button-primary {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    margin: 10px 15px;
 }
 .form-field {
     display: flex;
@@ -383,6 +383,7 @@ button{
 @media (min-width:768px){
     .nav {
         height: 100%;
+        align-items: start;
     }
     
 
@@ -413,9 +414,8 @@ button{
 }
 
 @media (min-width: 768px) {
-    .social-status {
+    .stats-container {
         display: flex;
-        flex-direction: row;
     }
     .social-container{
         display: flex;
@@ -467,8 +467,12 @@ button{
         height: 200px;
         margin: 5px;
     }
+}
 
-
+@media (min-width: 768px) {
+    .members-status, .members-text {
+    text-align: left;
+    }
 }
 
 @media (min-width: 768px) {
