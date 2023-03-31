@@ -229,6 +229,10 @@ h3 {
         MESSAGE USER 
 ===================================*/
 
+.message {
+    margin: 10px;
+}
+
 .widget-container {
     display: flex;
     flex-direction: column;
@@ -266,11 +270,6 @@ h3 {
 /*===================================
         Settings 
 ===================================*/
-.settings {
-    display: flex;
-    flex-direction: column;
-
-}
 
 
 /*toggle switch*/
@@ -337,7 +336,6 @@ select {
     display: flex;
     justify-content: space-around;
     width: 45%;
-    margin: 10px auto;
     height: 50px;
     border-radius: 5px;
 }
@@ -434,6 +432,11 @@ button{
     .message,  .activity, .settings {
         display: grid;
         grid-column: 1 / span 2;
+    }
+
+    .message, .settings {
+     margin: 10px;
+     grid-column: 1 / span 2;
     }
 
     .toggle-checkbox{
