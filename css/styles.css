@@ -134,6 +134,17 @@ body {
     align-items: center;
 }
 
+.daily, .mobile {
+    border: 2px #d2d0d0;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+}
+
+.daily {
+    border-bottom: none;
+}
+
 
 /*===================================
         SVG
@@ -250,6 +261,8 @@ h3 {
     align-items: center;
     height: 50px;
     padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .form-area{
@@ -259,6 +272,7 @@ h3 {
     height: 150px;
     text-align: left;
     padding:10px;
+    margin-bottom: 10px;
 }
 
 .button-primary {
@@ -277,7 +291,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    margin-bottom: 15px;
 }
 
 .toggle-checkbox {
@@ -322,13 +336,17 @@ select {
     border-width: 2px;
 }
 
+.settings {
+    margin: 10px;
+}
+
 
 .settings-button {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+    margin: -8px;
 }
 
 #save,
@@ -338,12 +356,14 @@ select {
     width: 45%;
     height: 50px;
     border-radius: 5px;
+    margin: 15px auto;
 }
 
 button{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }    
 
 
@@ -414,10 +434,11 @@ button{
 @media (min-width: 768px) {
     .stats-container {
         display: flex;
+        justify-content: space-between;
     }
     .social-container{
         display: flex;
-        width: 200px;
+        width: 100%;
     }
 }
 
@@ -425,6 +446,13 @@ button{
     .daily {
         grid-column: 1 / span 1;
     }
+
+    .daily, .mobile {
+        border: 2px #d2d0d0;
+        border-style: solid;
+        border-right: none;
+    }
+
 }
 
 
