@@ -360,8 +360,10 @@ select {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: -8px;
+    margin-top: auto;
 }
+
+
 
 #save,
 #cancel{
@@ -380,7 +382,13 @@ button{
     margin-bottom: 15px;
 }    
 
+#save {
+    margin-left: 0px;
+}
 
+#cancel {
+    margin-right: 0px;
+}
 
 
 /*===================================
