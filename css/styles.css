@@ -121,7 +121,7 @@ body {
 .main-header {
     display: grid;
     grid-column: 1;
-    margin-bottom: 60px; 
+    margin-bottom: 10px; 
     background-color:#eee;
     grid-template-columns: 150px auto;
 }
@@ -145,6 +145,20 @@ body {
     border-bottom: none;
 }
 
+.alert {
+    display: flex;
+    margin: 0px auto;
+    border-radius: 6px;
+    background-color: #4463ff;
+    height: 45px;
+}
+
+.alert-banner {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: auto;
+}
 
 /*===================================
         SVG
