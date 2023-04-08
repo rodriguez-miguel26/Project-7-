@@ -7,6 +7,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Anuphan', sans-serif;
 } 
 body {
     display: grid;
@@ -151,6 +152,7 @@ body {
     padding: 20px 0px;
     background-color: #ccc;
     border-radius: 7px; 
+    font-size: 14px;
 }
 
 .alert-banner {
