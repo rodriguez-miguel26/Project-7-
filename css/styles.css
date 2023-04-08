@@ -147,18 +147,23 @@ body {
 
 .alert {
     display: flex;
-    margin: 0px auto;
-    border-radius: 6px;
-    background-color: #4463ff;
-    height: 45px;
+    margin: 0px 10px;
+    padding: 20px 0px;
+    background-color: #ccc;
+    border-radius: 7px; 
 }
 
 .alert-banner {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-items: auto;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 2px;
 }
+
+.alert-banner-close {
+    display: flex;
+    justify-content: flex-end;
+  }
 
 /*===================================
         SVG
@@ -166,6 +171,7 @@ body {
 .bell-icon {
     width: 30px;
     height: 30px;
+    fill: rgb(244, 244, 244);
 }
 
 .nav-svg {
@@ -175,6 +181,7 @@ body {
     width: 45%;
     justify-content: space-evenly;
     margin: auto;
+    fill: rgb(244, 244, 244);
 }
 
 .social-image {
@@ -184,6 +191,7 @@ body {
     background-color: #3d5cf6;
     margin-left: 50px;
     padding: 10px;
+    fill: rgb(244, 244, 244);
 }
 
 
@@ -453,6 +461,15 @@ button{
     }
 
 }
+
+@media (min-width:768px){
+    .alert {
+        display: flex;
+        grid-column: 1 / span 2;
+    }    
+}
+
+
 
 @media (min-width:768px){
     .main-header {
