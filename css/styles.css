@@ -414,6 +414,9 @@ button{
     margin-right: 0px;
 }
 
+canvas {
+    max-width: 100%;
+}
 
 /*===================================
         MEDIA QUERIES 768px
@@ -570,6 +573,10 @@ button{
     }
 }
 
+
+@media (min-width: 768px) {
+    
+}
 
 
 /*===================================
