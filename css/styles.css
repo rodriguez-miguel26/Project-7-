@@ -47,7 +47,7 @@ body {
 
 
 .header-container {
-    background-color: #5981FE;
+    background-color: #7771e7;
     height:80px;
     width: 100%;
     display: flex;
@@ -86,7 +86,7 @@ body {
         NAVIGATION
 ===================================*/
 .nav {
-    background-color: #4465CC;
+    background-color: #6058b7;
     height: 50px;
     display: flex;
     align-items: center;
@@ -150,16 +150,17 @@ body {
     display: flex;
     margin: 0px 10px;
     padding: 20px 0px;
-    background-color: #ccc;
+    background-color: #7477BF;
     border-radius: 7px; 
-    font-size: 14px;
+    color:white;
 }
 
 .alert-banner {
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
-    padding-right: 2px;
+    margin:0 10px;
+    font-size: 12px;
 }
 
 .alert-banner-close {
@@ -194,7 +195,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #3d5cf6;
+    background-color: #7477BF;
     margin-left: 50px;
     padding: 10px;
     fill: rgb(244, 244, 244);
@@ -361,7 +362,7 @@ h3 {
     border-radius: 50%;
     transform: translate(-50%, -50%);
 } .toggle-checkbox:checked {
-    background-color: #4463ff;
+    background-color: #7477BF;
 } .toggle-checkbox:checked::after {
     left: 85%;
 }
