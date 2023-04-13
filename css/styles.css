@@ -167,6 +167,10 @@ body {
     justify-content: flex-end;
   }
 
+#mobile-chart {
+    margin: 10px auto;
+}
+
 /*===================================
         SVG
 ===================================*/
