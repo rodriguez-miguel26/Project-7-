@@ -82,6 +82,18 @@ body {
     margin: 0;
 }
 
+.bell-icon:hover {
+    transition: fill .25s ease-in; 
+    fill: rgb(48, 48, 113);
+}
+
+#notifications {
+    border: 3px solid rgb(15, 218, 1);
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+
 /*===================================
         NAVIGATION
 ===================================*/
