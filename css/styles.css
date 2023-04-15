@@ -135,7 +135,7 @@ body {
     display: grid;
     grid-column: 1;
     margin-bottom: 10px; 
-    background-color:#eee;
+    background-color:#d6d6d6;
     grid-template-columns: 150px auto;
 }
 
@@ -318,6 +318,9 @@ h3 {
     padding: 10px;
     margin-bottom: 10px;
     width: 100%;
+    background-color: #b3b3b3;
+    opacity: 50%;
+    border-radius: 5px;
 }
 
 .form-area{
@@ -328,6 +331,8 @@ h3 {
     text-align: left;
     padding:10px;
     margin-bottom: 10px;
+    background-color: #b3b3b3;
+    opacity: 50%;
 }
 
 .button-primary {
@@ -335,6 +340,8 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 50px;
+    background-color: #6058b7;
+    color: white;
 }
 /*===================================
         Settings 
@@ -404,8 +411,6 @@ select {
     margin-top: auto;
 }
 
-
-
 #save,
 #cancel{
     display: flex;
@@ -414,6 +419,8 @@ select {
     height: 50px;
     border-radius: 5px;
     margin: 15px auto;
+    background-color:#6058b7;
+    color: white;
 }
 
 button{
