@@ -242,7 +242,13 @@ body {
     margin: 0 auto;
 }
 
-
+.social {
+    color: #6058b7;
+}
+.stats {
+    font-size: 30px;
+    opacity: 50%;
+}
 
 /*===================================
       RECENT ACTIVITY and MEMBERS 
