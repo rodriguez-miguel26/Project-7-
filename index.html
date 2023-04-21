@@ -188,7 +188,7 @@
                     <p class="date">10/15/20</p>
                 </div>
 
-                <div class="members-container">
+                <div class="members-container-dan">
                     <img src="images/member-4.jpg" class="profile-image">
                     <div class="members-text">
                         <p>Dan Oliver</p>
@@ -226,7 +226,7 @@
                     </div>
                 </div>
 
-                <div class="members-activity">
+                <div class="members-activity-dan">
                     <img src="images/member-4.jpg" class="profile-image">
                     <div class="members-status">
                         <p>Dan Oliver posted WebApp's SEO Tips</p>
@@ -238,27 +238,26 @@
             <!--messaging widget-->
             <section class="message">
                 <h3>MESSAGE USER</h3>
-
                 <form class="widget-container">
                     <input typer="text" placeholder="Search for user" class="form-field" id="userField">
-                    <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+                    <textarea placeholder="Message for user" class="form-field" id="messageField"></textarea>
                     <button class="button-primary" id="send">Send</button>
                 </form>
             </section>
 
             <!--local settings widget-->
             <section class="settings" id="setting-page">
-                    <h3>SETTINGS</h3><!--custom CSS toggle code-->
-                    <div class="toggle-text">
-                        <label for="email">Send Email Notifications</label>
-                        <input class="toggle-checkbox" id="email" type="checkbox">
-                    </div>
+                <h3>SETTINGS</h3>
+                    <!--custom CSS toggle code-->
+                    <form class="widget-container">
+                        <div class="toggleswitch" id="toggleswitch">
+                            <p class="toggle-text">Send Email Notifications</p>
+                            <input class="toggle-checkbox" id="toggle-checkbox" type="checkbox">
 
-                    <div class="toggle-text">
-                        <label for="public-noti">Set Profile to Public</label>
-                        <input class="toggle-checkbox" id="public" type="checkbox">
-                    </div>
-
+                            <p class="toggle-text">Set Profile to Public</p>
+                            <input class="toggle-checkbox" id="toggle-checkbox" type="checkbox">
+                        </div>
+                    </form>    
                 <select class="form-field" id="timezone">
                     <option class="select-text" disabled selected>Select timezone</option>
                     <option>Eastern</option>
