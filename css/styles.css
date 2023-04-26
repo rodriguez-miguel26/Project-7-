@@ -536,6 +536,11 @@ button{
         padding-left: 20px;
         padding-right: 10px;
     }
+
+    .traffic-nav-link, .traffic-nav-link.active:hover{
+        border: 5px solid green;
+        border-radius: 20%;
+    }
 }
 
 
