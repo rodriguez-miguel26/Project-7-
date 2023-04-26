@@ -272,7 +272,9 @@ body {
     margin: 10px;
 }
 
-
+.greater{
+    display: none;
+}
 
 .profile-image {
     padding: 15px;
@@ -579,7 +581,7 @@ button{
     }
 
     .toggle-checkbox{
-        margin-right: 440px;
+        margin-right: 400px;
     }
 
 }
@@ -666,10 +668,21 @@ button{
 
 }
 
+.greater{
+    display: flex;
+    margin-left: auto;
+}
+
+.profile-image{
+    padding: 15px;
+    border-radius: 50%;
+    width: 115px;
+}
+
 
 @media (min-width: 1024px) {
     .activity {
-         border:2px solid #c7c7c7;
+        border:2px solid #c7c7c7;
         border-right: none;
         border-top: none;
     }
@@ -677,16 +690,17 @@ button{
 
 @media (min-width:1024px) {
     .message {
-        border: 2px solid #c7c7c7;
-        border-left: none;
-        border-bottom: none;
-        border-top: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
     }
 
     .settings{
         margin: 0px;
-          
-        
+        padding: 15px; 
+        border: 2px solid #c7c7c7;
+        border-top:none;
+        border-bottom: none;
     }
 
 }
