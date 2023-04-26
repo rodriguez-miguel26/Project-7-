@@ -526,6 +526,17 @@ button{
     }    
 }
 
+@media (min-width:768px){
+    .traffic-nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .traffic-nav-link, .traffic-nav-link.active{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}
 
 
 @media (min-width:768px){
