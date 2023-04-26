@@ -632,7 +632,10 @@ button{
 
 
 @media (min-width: 768px) {
-    
+    .greater{
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 
@@ -668,16 +671,20 @@ button{
 
 }
 
-.greater{
-    display: flex;
-    margin-left: auto;
+@media (min-width:1024px){
+    .greater{
+        display: flex;
+        margin-left: auto;
+    }
+
+    .profile-image{
+        padding: 15px;
+        border-radius: 50%;
+        width: 115px;
+    }
+
 }
 
-.profile-image{
-    padding: 15px;
-    border-radius: 50%;
-    width: 115px;
-}
 
 
 @media (min-width: 1024px) {
