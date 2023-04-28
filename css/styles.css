@@ -118,13 +118,27 @@ body {
 
 .traffic-nav {
     display :flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;   
+    justify-content:flex-end;
+    list-style-type: none;
+    text-align: center;   
 }
 
 
+.traffic-nav-link, .traffic-nav-link.active {
+    padding: 0px 20px;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+    overflow:hidden;
+    height: 20px;
+    border: none;
+    border-radius: 16px;
+}
+
+.traffic-nav-link:hover, .traffic-nav-link.active:hover {
+   background: rgb(96, 202, 96); 
+   color: white;
+}
 
 /*===================================
         MAIN
@@ -463,7 +477,6 @@ button{
 }    
 
 
-
 .widget-container-full, .widget-container-half {
     position: relative;
     margin: auto;
@@ -524,23 +537,6 @@ button{
         display: flex;
         grid-column: 1 / span 2;
     }    
-}
-
-@media (min-width:768px){
-    .traffic-nav{
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .traffic-nav-link, .traffic-nav-link.active{
-        padding-left: 20px;
-        padding-right: 10px;
-    }
-
-    .traffic-nav-link, .traffic-nav-link.active:hover{
-        border: 5px solid green;
-        border-radius: 20%;
-    }
 }
 
 
