@@ -9,13 +9,16 @@
     box-sizing: border-box;
     font-family: 'Anuphan', sans-serif;
 } 
+
 body {
     display: grid;
     width: 100%;
 }
+
+
 .grid-container{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
             "header"
@@ -39,6 +42,10 @@ body {
 
 .main{
     grid-area: main;
+}
+
+main{
+    display: grid;
 }
 
 /*===================================
@@ -75,6 +82,7 @@ body {
     height: 40px;
     position: relative;
     margin-left: 10px;
+    opacity: 25%;
 }
 
 .profile-picture{
@@ -213,8 +221,8 @@ body {
         SVG
 ===================================*/
 .bell-icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     fill: rgb(244, 244, 244);
 }
 
@@ -229,11 +237,11 @@ body {
 }
 
 .social-image {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #7477BF;
-    margin-left: 50px;
+    margin-left: 20px;
     padding: 10px;
     fill: rgb(244, 244, 244);
 }
@@ -250,7 +258,7 @@ body {
     border-color: #b3b3b3;
     border-width: 2px;
     border-radius: 7px;
-    height: 75px;
+    height: 100px;
     background-color: #dae3ea;
 }
 
@@ -258,15 +266,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    padding-left: 15px;
 }
 
 .social {
     color: #6058b7;
+    text-align: left;
 }
 .stats {
-    font-size: 30px;
+    font-size: 40px;
     opacity: 50%;
 }
 
@@ -293,7 +302,7 @@ body {
 .profile-image {
     padding: 15px;
     border-radius: 50%;
-    width: 150px;
+    width: 110px;
 }
 
 
@@ -307,7 +316,7 @@ body {
 h3 {
     display: flex;
     margin-left: 3px;
-    margin: 15px 15px;
+    margin: 15px 15px 0;
     text-align: left;
 }
 
@@ -496,9 +505,6 @@ button{
     }
 }
 
-.main{
-    display:grid;
-}
 
 @media (min-width:768px) {
     .main{
@@ -550,6 +556,11 @@ button{
 @media (min-width:768px) {
     .traffic, .social-status {
         grid-column: 1 / span 2;
+    }
+
+    .stats {
+        font-size: 30px;
+        opacity: 50%;
     }
 }
 
@@ -625,7 +636,7 @@ button{
         flex-direction: row;
         align-items: center;
         width: auto;
-        height: 200px;
+        height: 110px;
         margin: 10px;
     }
 }
@@ -677,7 +688,7 @@ button{
         flex-direction: row;
         align-items: center;
         width: auto;
-        height: 200px;
+        height: 110px;
         margin: 10px;
     }
 
