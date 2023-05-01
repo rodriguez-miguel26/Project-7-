@@ -94,7 +94,11 @@ const dailyData = {
 const mobileCanvas = document.getElementById("mobile-chart");
 
 const mobileData= {
-    label: ["Desktop", "Tablet", "Phones"],
+    label: [
+        'Desktop', 
+        'Tablet', 
+        'Phones'
+    ],
     datasets: [{
         label: '# of users', 
         data: [2000, 550, 500],
@@ -124,7 +128,6 @@ let mobileChart = new Chart(mobileCanvas, {
     type: 'doughnut',
     data: mobileData, 
     options: mobileOptions
-
 });
 
 /*----------Message form-------------*/
