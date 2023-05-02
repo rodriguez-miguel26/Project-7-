@@ -7,7 +7,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Anuphan', sans-serif;
+    font-family: 'Roboto', sans-serif;
 } 
 
 body {
@@ -94,6 +94,7 @@ main{
 
 .student-name {
     margin: 0;
+    color: white;
 }
 
 
@@ -103,6 +104,9 @@ main{
     margin-bottom: 30px;
 }
 
+#alert-text{
+    color: white;
+}
 
 /*===================================
         NAVIGATION
@@ -499,6 +503,12 @@ button{
     height:100%;
 }
 
+#bold{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
 /*===================================
         MEDIA QUERIES 768px
 ===================================*/
@@ -737,6 +747,7 @@ button{
         display: flex;
         flex-direction: column;
         padding: 0 15px;
+        border-bottom: none;
     }
 
     .settings{
@@ -745,6 +756,7 @@ button{
         border: 2px solid #c7c7c7;
         border-top:none;
         border-bottom: none;
+        border-right: none;
     }
 
 }

@@ -6,9 +6,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <title>Webapp Dashboard</title>
     </head>
 
@@ -75,8 +74,8 @@
             </div>  
             
             <div class="alert" id="alert">
-                <p><strong>Alert:</strong> You have <strong></strong> overdue tasks to complete</p> 
-                <p class="alert-banner-close">x</p><!--JS will insert alert here-->
+                <p id="alert-text"><strong>Alert:</strong> You have <strong></strong> overdue tasks to complete</p> 
+                <p id="alert-text" class="alert-banner-close">x</p><!--JS will insert alert here-->
             </div>
 
             <section class="traffic">
@@ -98,7 +97,7 @@
             </section>
             
             <!--bar graph-->
-            <section class="daily">
+            <section class="daily" id="bar-chart">
                 <h3>DAILY TRAFFIC</h3>
 
                 <div class="widget-container-half">
@@ -205,7 +204,7 @@
                 <div class="members-activity">
                     <img src="images/member-1.jpg" class="profile-image">
                     <div class="members-status">
-                        <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                        <p>Victoria Chambers commented on <a href="#" id="bold">WebApp's SEO Tips</a></p>
                         <p>4 hours ago</p>
                     </div>
                     <p class="greater">></p>
@@ -214,7 +213,7 @@
                 <div class="members-activity">
                     <img src="images/member-2.jpg" class="profile-image">
                     <div class="members-status">
-                        <p>Dale Byrd liked the post Facebook's Changes for 2021</p>
+                        <p>Dale Byrd liked the post <a href="#" id="bold">Facebook's Changes for 2021</a></p>
                         <p>5 hours ago</p>
                     </div>
                     <p class="greater">></p>
@@ -223,7 +222,7 @@
                 <div class="members-activity">
                     <img src="images/member-3.jpg" class="profile-image">
                     <div class="members-status">
-                        <p>Dawn Wood commented on Facebook's Changes for 2021</p>
+                        <p>Dawn Wood commented on <a href="#" id="bold">Facebook's Changes for 2021</a></p>
                         <p>5 hours ago</p>
                     </div>
                     <p class="greater">></p>
@@ -232,7 +231,7 @@
                 <div class="members-activity-dan">
                     <img src="images/member-4.jpg" class="profile-image">
                     <div class="members-status">
-                        <p>Dan Oliver posted WebApp's SEO Tips</p>
+                        <p>Dan Oliver posted <a href="#" id="bold">WebApp's SEO Tips</a></p>
                         <p>1 day ago</p>
                     </div>
                     <p class="greater">></p>
