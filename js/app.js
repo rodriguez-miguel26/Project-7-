@@ -94,7 +94,7 @@ const dailyData = {
 const mobileCanvas = document.getElementById("mobile-chart");
 
 const mobileData= {
-    label: [
+    labels: [
         'Desktop', 
         'Tablet', 
         'Phones'
@@ -107,27 +107,28 @@ const mobileData= {
             '#7477BF',
             '#78CF82',
             '#51B6C8'
-        ]
+        ],
+        hoverOffset:4
     }]
 };
 
-const mobileOptions = {
-    aspectRatio: 1.9, 
-    plugins: {
-        legend: {
-            position: 'right',
-            labels: {
-                boxWidth: 20,
-                fontStyle:'bold'
-            }
-        }
-    }            
-};
+
+
 
 let mobileChart = new Chart(mobileCanvas, {
     type: 'doughnut',
     data: mobileData, 
-    options: mobileOptions
+    options: {
+        plugins:{
+            legend:{
+                position: 'right',
+                display:true,
+                labels: {
+                    color:'black'
+                }
+            }
+        }
+    }
 });
 
 /*----------Message form-------------*/
